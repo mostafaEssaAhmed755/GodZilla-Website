@@ -33,7 +33,10 @@
                 <a href="features.html" class="btn btn-outline">Read more</a>
             </div>
             <div class="showcase-form card">
-                <form action="">
+                <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+                    <input type="hidden" name="form-name" value="contact">
+                    <input class="hidden" name="bot-field" />
+
                     <h2>Request a Demo</h2>
                     <div class="form-control">
                         <input type="text" name="name" placeholder="Name" required>
